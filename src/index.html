@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="صفحة متجر إلكتروني">
+        <title>صفحة متجر</title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <!-- القائمة العلوية -->
+            <div class="row">
+                <nav class="navbar navbar-expand-lg  custom-navbar">
+                    <div class="container px-0">
+                        <div class="navbar-header">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a href="#" class="me-5"><img src="images/logo.png" alt="متجر عربي"></a>
+                        </div>
+                        <form action="" class="d-flex">
+                            <input type="search" class="form-control custom-form-control" placeholder="كلمة البحث.....">
+                            <div class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle custom-btn catagories"
+                                    data-bs-toggle="dropdown" area-expanded="false" id="navbarDropdown">
+                                    أختر فئة
+                                </a>
+                                <ul class="dropdown-menu custom-dropdown-menu">
+                                    <li>
+                                        <div class="checkbox ms-2">
+                                            <input name="search-catagory" type="checkbox" value="men">
+                                            رجالي
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox ms-2">
+                                            <input name="search-catagory" type="checkbox" value="women">
+                                            نسائي
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox ms-2">
+                                            <input name="search-catagory" type="checkbox" value="childrens">
+                                            أطفال
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="search-btn btn">أبحث</button>
+                        </form>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link active" aria-current="page" href="#">الصفحة الرئيسية</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        أقسام المتجر
+                                    </a>
+                                    <ul class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">رجالي</a></li>
+                                        <li><a class="dropdown-item" href="#">نسائي</a></li>
+                                        <li><a class="dropdown-item" href="#">أطفال</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./search.html">البحث المتقدم</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./contact.html">تواصل معنا</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="btn-shopping-cart" href="./checkout.html"
+                                        title="عربة الشراء" data-bs-toggle="tooltip" data-bs-placement="bottom">
+                                        <i class="fa-solid fa-cart-shopping btn-icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </nav>
+            </div>
+            <!-- نهاية القائمة العلوية-->
+            <!-- عارض الشرائح -->
+            <div class="row">
+                <div id="carousel-featured" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators custom-carousel-indicators">
+                        <img src="images/lacoste_1.png" data-bs-target="#carousel-featured" data-bs-slide-to="0"
+                            class="active custom-carousel-indicator-primary" alt="تي شيرت رجالي من لاكوست">
+                        <img src="images/lacoste_2.png" data-bs-target="#carousel-featured" data-bs-slide-to="1"
+                            class="custom-carousel-indicator-primary" alt="حقيبة شانتكو نسائية">
+                        <img src="images/lacoste_3.png" data-bs-target="#carousel-featured" data-bs-slide-to="2"
+                            class="custom-carousel-indicator-primary" alt="تي شيرت بولو">
+                        <img src="images/adidas_3.png" data-bs-target="#carousel-featured" data-bs-slide-to="3"
+                            class="custom-carousel-indicator-primary" alt="بدلة فايربرد الرياضية">
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 offset-2">
+                                        <img src="images/lacoste_1.png" alt="تي شيرت رجالي من لاكوست">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="product-details">
+                                            <div class="product-catagory">
+                                                تخفيضات
+                                            </div>
+                                            <div class="sale lg">50% <span class="fs-6">خصم</span></div>
+                                            <h1>تي شيرت رجالي من لاكوست</h1>
+                                            <a href="product.html" class="btn btn-lg custom-btn-outline-warning">
+                                                تسوق الان
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 offset-2">
+                                        <img src="images/lacoste_2.png" alt="حقيبة شانتكو نسائية">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="product-details">
+                                            <div class="product-catagory">
+                                                نسائي
+                                            </div>
+                                            <h1>حقيبة شانتكو نسائية</h1>
+                                            <a href="product.html" class="btn btn-lg custom-btn-outline-warning">تسوق
+                                                الان</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 offset-2">
+                                        <img src="images/lacoste_3.png" alt="تي شيرت بولو">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="product-details">
+                                            <div class="product-catagory">
+                                                الأكثر مبيعاً
+                                            </div>
+                                            <h1>تي شيرت بولو</h1>
+                                            <a href="product.html" class="btn btn-lg custom-btn-outline-warning">تسوق
+                                                الان</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-4 offset-2">
+                                        <img src="images/adidas_3.png" alt="بدلة فايربرد الرياضية">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="product-details">
+                                            <div class="product-catagory">
+                                                أطفال
+                                            </div>
+                                            <h1>بدلة فايربرد الرياضية</h1>
+                                            <a href="product.html" class="btn btn-lg custom-btn-outline-warning">تسوق
+                                                الان</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" data-bs-target="#carousel-featured" data-bs-slide="prev">
+                        <i class="fa-solid fa-chevron-right fa-2xl"></i>
+                    </button>
+                    <button class="carousel-control-next" data-bs-target="#carousel-featured" data-bs-slide="next">
+                        <i class="fa-solid fa-chevron-left fa-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- نهاية عارض الشرائح -->
+            <!-- مميزات المنتج -->
+            <div class="container">
+                <div class="row">
+                    <div id="store-features" class="col-6 offset-3">
+                        <h3 class="text-center heading">مميزات المنتج</h3>
+                        <div class="row">
+                            <div class="col-4 text-center feature">
+                                <img src="./images/feature_1.png" alt="feature_1">
+                                <div>التوصيل مجاني</div>
+                            </div>
+                            <div class="col-4 text-center feature">
+                                <img src="./images/feature_2.png" alt="feature_2">
+                                <div>ضمان المنتج سنة</div>
+                            </div>
+                            <div class="col-4 text-center feature">
+                                <img src="./images/feature_3.png" alt="feature_3">
+                                <div>استرجاع المنتج</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- نهاية مميزات المنتج -->
+        </div>
+    </body>
+
+</html>

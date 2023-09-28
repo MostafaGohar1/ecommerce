@@ -1,0 +1,35 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "ecommerce site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "serve": "webpack serve --mode development"
+  },
+  "keywords": [
+    "npm",
+    "js",
+    "webpack"
+  ],
+  "author": "gohar",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "rtlcss-loader": "^1.0.3",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.0.2",
+    "fontawesome-free": "^1.0.4"
+  }
+}
