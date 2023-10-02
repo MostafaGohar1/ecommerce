@@ -14,7 +14,8 @@
 }
 
 body {
-    font-family: "JF Flat Regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "JF Flat Regular", "Segoe UI", Tahoma, Geneva, Verdana,
+        sans-serif;
     font-size: 14px;
     line-height: 1.5;
     color: #000;
@@ -59,8 +60,6 @@ body {
     line-height: 80%;
     transform: rotate(-25deg);
 }
-
-
 
 /*القائمة العلوية*/
 .custom-navbar {
@@ -250,3 +249,92 @@ body {
 }
 
 /*  نهاية مميزات المنتج */
+/*  الأكثر مبيعا */
+.heading {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.custom-thumbnail img {
+    height: 250px;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 1;
+}
+
+.custom-thumbnail {
+    border: 2px solid #eef0ea;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.custom-thumbnail:hover {
+    border-color: #53ccd7;
+}
+
+.custom-thumbnail h4 {
+    font-size: 18px;
+}
+
+.price {
+    color: #53ccd7;
+}
+
+.rating {
+    color: #c2c2c2;
+}
+
+.rating .active {
+    color: #f3af41;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    height: 250px;
+    width: calc(100% - 16px);
+    background-color: rgba(83, 204, 215, 0.5);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.add-to-cart-btn {
+    color: #53ccd7;
+    background-color: #fff;
+    font-weight: 700;
+}
+
+.custom-thumbnail .sale {
+    left: 26px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 9px;
+    z-index: 5;
+}
+
+.custom-carousel-indicators2 {
+    bottom: -70px;
+}
+
+.custom-carousel-indicators2>li {
+    width: 13px !important;
+    height: 13px !important;
+    margin: 2px !important;
+    background-color: #dbdbdb !important;
+}
+
+.custom-carousel-indicators2>li.active {
+    background-color: #565656 !important;
+}
+
+/*  نهاية الأكثر مبيعا */
